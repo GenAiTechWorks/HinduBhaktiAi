@@ -713,7 +713,9 @@ public class ImageDetailActivity extends BaseActivity {
 
     @Override
     protected void onPause() {
-        super.onPause();
+
+        // ✅ DISMISS tutorial safely
+        TutorialHelper.clear();
 
         // 🔥 Stop all animations immediately
         detailImage.clearAnimation();
@@ -726,6 +728,7 @@ public class ImageDetailActivity extends BaseActivity {
 
         isPromptGenerating = false;
 
+        super.onPause();
     }
 
 
@@ -745,7 +748,7 @@ public class ImageDetailActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-        TutorialHelper.clear(); // 🔥 ADD THIS
+       // TutorialHelper.clear(); // 🔥 ADD THIS
         super.onDestroy();
         if (detailImage != null) {
             detailImage.setImageDrawable(null);
@@ -787,40 +790,45 @@ public class ImageDetailActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
+
         invalidateOptionsMenu();
-        // 🔥 ANDROID 12 FIX: ensure image is restored
+
         if (detailImage.getDrawable() == null && imageList != null) {
             loadImage();
         }
 
-        TutorialHelper.showIfFirstTime(
-                this,
-                TutorialHelper.KEY_IMAGE,
-                new View[]{
-                        findViewById(R.id.imagePulseOverlay),
-                        findViewById(R.id.btnPromptAction),
-                        findViewById(R.id.btnHelpDetails),
-                        findViewById(R.id.btnYoutube),
-                      //  findViewById(R.id.tvPromptTitle)
-                },
-                new String[]{
-                        "To move Next–Previous",
-                        "Generate & Copy Prompt Instantly",
-                        "Help - How to Generate Images",
-                        "Watch Tutorial on YouTube",
-                        "You’re All Set 🎉"
-                },
-                new String[]{
-                        "Swipe Left / Right to view more beautiful images",
-                        "Generate & Copy the prompt and paste it into any AI image generator.",
-                        "Guideline of simple steps to create stunning AI images.",
-                        "Learn how to create divine AI prompts step by step",
-                        "Start creating, saving, and sharing AI prompts with ease."
-                }
-        );
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+
+            if (isFinishing() || isDestroyed()) return;
+
+            TutorialHelper.showIfFirstTime(
+                    this,
+                    TutorialHelper.KEY_IMAGE,
+                    new View[]{
+                            findViewById(R.id.imagePulseOverlay),
+                            findViewById(R.id.btnPromptAction),
+                            findViewById(R.id.btnHelpDetails),
+                            findViewById(R.id.btnYoutube),
+                    },
+                    new String[]{
+                            "To move Next–Previous",
+                            "Generate & Copy Prompt Instantly",
+                            "Help - How to Generate Images",
+                            "Watch Tutorial on YouTube",
+                            "You’re All Set 🎉"
+                    },
+                    new String[]{
+                            "Swipe Left / Right to view more beautiful images",
+                            "Generate & Copy the prompt and paste it into any AI image generator.",
+                            "Guideline of simple steps to create stunning AI images.",
+                            "Learn how to create divine AI prompts step by step",
+                            "Start creating, saving, and sharing AI prompts with ease."
+                    }
+            );
+
+        }, 300);
     }
 }
