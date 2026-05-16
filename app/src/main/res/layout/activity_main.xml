@@ -55,16 +55,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginHorizontal="56dp"
+
                         android:text="@string/hindu_bhakti_ai"
                         android:textStyle="bold"
+                        android:textSize="24sp"
 
                         android:maxLines="1"
                         android:ellipsize="end"
 
                         app:autoSizeTextType="uniform"
-                        app:autoSizeMinTextSize="6sp"
-                        app:autoSizeMaxTextSize="18sp"
+                        app:autoSizeMinTextSize="16sp"
+                        app:autoSizeMaxTextSize="26sp"
                         app:autoSizeStepGranularity="1sp" />
+
                 </com.google.android.material.appbar.MaterialToolbar>
 
                 <com.google.android.material.tabs.TabLayout

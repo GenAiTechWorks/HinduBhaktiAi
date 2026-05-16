@@ -6,7 +6,7 @@ public class ClickTracker {
 
     private static final String PREF = "ad_prefs";
     private static final String KEY = "generate_clicks";
-    private static final int SHOW_AFTER = 5;
+    private static final int SHOW_AFTER = 10;
 
     public static boolean shouldShowAd(Context context) {
         SharedPreferences prefs =

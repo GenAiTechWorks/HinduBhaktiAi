@@ -33,7 +33,7 @@ public class PrivacyPolicyActivity extends AppCompatActivity {
 
         findViewById(R.id.btnViewPrivacyPolicy).setOnClickListener(v -> startActivity(new Intent(
                 Intent.ACTION_VIEW,
-                Uri.parse("https://sites.google.com/view/lords-ai-prompt/home")
+                Uri.parse("http://genaitechworks.com/Hindu_Bhakti_AI-Privacy_Policy.html")
         )));
     }
 
