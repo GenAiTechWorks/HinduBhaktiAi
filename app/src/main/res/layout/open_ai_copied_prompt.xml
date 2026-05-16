@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_dialog_rounded">
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_prompt_in_ai_tool"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="none"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="6sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- LOGIN NOTE -->
+    <TextView
+        android:id="@+id/tvLoginNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note"
+
+        android:textSize="14sp"
+        android:lineSpacingExtra="0dp"
+        android:includeFontPadding="false"
+
+        android:textColor="?attr/colorOnSurface"
+
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+
+        android:background="@drawable/bg_info_box"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- BUTTON ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- GEMINI -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGemini"
+            android:layout_width="0dp"
+            android:layout_height="?attr/minTouchTargetSize"
+            android:layout_weight="1"
+            android:text="@string/gemini"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="none"
+
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:paddingHorizontal="4dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeStepGranularity="1sp"
+            android:background="@drawable/bg_copy_prompt"
+            app:backgroundTint="@null"
+            app:cornerRadius="18dp"/>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp"/>
+
+        <!-- CHATGPT -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChatGPT"
+            android:layout_width="0dp"
+            android:layout_height="?attr/minTouchTargetSize"
+            android:layout_weight="1"
+            android:text="@string/chatgpt"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="none"
+
+            android:paddingHorizontal="4dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeStepGranularity="1sp"
+
+            android:background="@drawable/bg_copy_prompt"
+            app:backgroundTint="@null"
+            app:cornerRadius="18dp"/>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="1dp"/>
+
+        <!-- COPILOT -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDalle"
+            android:layout_width="0dp"
+            android:layout_height="?attr/minTouchTargetSize"
+            android:layout_weight="1"
+            android:text="@string/co_pilot"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="none"
+
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:paddingHorizontal="4dp"
+
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="6sp"
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeStepGranularity="1sp"
+            android:background="@drawable/bg_copy_prompt"
+            app:backgroundTint="@null"
+            app:cornerRadius="18dp"/>
+
+    </LinearLayout>
+
+    <!-- BACK BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/minTouchTargetSize"
+        android:text="@string/back"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="6sp"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeStepGranularity="1sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/bg_copy_prompt_pink"
+        app:backgroundTint="@null"
+        app:cornerRadius="18dp"/>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LIGHT THEME BASE -->
+    <color name="md_primary_light">#FFFFFF</color>
+    <color name="md_on_primary_light">#000000</color>
+    <color name="md_surface_light">#F5F5F5</color>
+    <color name="md_on_surface_light">#1C1B1F</color>
+
+    <!-- DARK THEME BASE -->
+    <color name="md_primary_dark">#1C1B1F</color>
+    <color name="md_on_primary_dark">#FFFFFF</color>
+    <color name="md_surface_dark">#121212</color>
+    <color name="md_on_surface_dark">#E6E1E5</color>
+
+    <color name="tutorialOverlay">#CC000000</color>
+    <color name="tutorialHighlight">#6EE7F9</color> <!-- teal / brand -->
+    <color name="tutorialDescription">#DDFFFFFF</color>
+    <color name="tutorialButton">#6EE7F9</color>
+    <color name="tutorialButtonText">#000000</color>
+    <color name="tutorial_dim">#CC000000</color>
+    <color name="tutorialText">#E0FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="step_card_bg">#1F2A3A</color>
+    <color name="tutorialHighlightOrange">#FFFF6F00</color>
+    <color name="bhakti_orange">#FF9800</color>
+    <color name="splash_dark_bg">#000000</color>
+    <color name="tutorial_subtitle">#000000</color>
+</resources>

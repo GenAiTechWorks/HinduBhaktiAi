@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 🔹 Small spacing (icons / tight gaps) -->
+    <dimen name="spacing_small">0dp</dimen>
+
+    <!-- 🔹 Medium spacing (text separation) -->
+    <dimen name="spacing_medium">5dp</dimen>
+
+    <!-- 🔹 Large spacing (screen padding / cards) -->
+    <dimen name="spacing_large">10dp</dimen>
+
+    <!-- 🔹 Extra-large spacing (bottom safe area / ads / nav bar) -->
+    <dimen name="spacing_xlarge">25dp</dimen>
+
+    <dimen name="spacing_xxlarge">280dp</dimen>
+    <!-- Corner Radius -->
+    <dimen name="corner_radius_large">18dp</dimen>
+
+</resources>

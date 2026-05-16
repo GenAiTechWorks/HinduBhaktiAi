@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- 🔹 APP BAR (STATUS BAR SAFE) -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/AppToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleCentered="true">
+
+            <!-- CENTER TITLE (SAME AS MAIN & IMAGE ACTIVITY) -->
+            <TextView
+                android:id="@+id/toolbarTitle"
+                style="@style/TextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/how_to_use_app"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.06" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 🔹 CONTENT (SCROLLS UNDER TOOLBAR) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+           <!-- <TextView
+                android:text="How It Works"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>-->
+
+            <TextView
+                android:text="@string/simple_steps_to_create_ai_art"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
+
+            <!-- Steps -->
+            <include layout="@layout/item_step_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"/>
+
+            <include layout="@layout/item_step_card_2"/>
+            <include layout="@layout/item_step_card_3"/>
+            <include layout="@layout/item_step_card_4"/>
+
+            <!-- Pro Tip -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:background="@drawable/bg_pro_tip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/pro_tip"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" android:layout_width="match_parent"/>
+
+                <TextView
+                    android:text="@string/customize_prompts_desc"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="match_parent" android:layout_width="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

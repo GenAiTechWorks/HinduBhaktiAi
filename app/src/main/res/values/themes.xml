@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.BhaktiPromptsAI" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- PRIMARY (Toolbar / App Bar) -->
+        <item name="colorPrimary">@color/md_primary_light</item>
+        <item name="colorOnPrimary">@color/md_on_primary_light</item>
+
+        <!-- SURFACE (Cards, Backgrounds) -->
+        <item name="colorSurface">@color/md_surface_light</item>
+        <item name="colorOnSurface">@color/md_on_surface_light</item>
+
+        <!-- STATUS BAR -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.BhaktiPromptsAI.Splash"
+        parent="Theme.SplashScreen">
+
+        <!-- 🔑 IMPORTANT: Bridge to AppCompat / Material -->
+        <item name="postSplashScreenTheme">@style/Theme.BhaktiPromptsAI</item>
+
+        <!-- 🎨 Splash background follows current theme -->
+        <!-- FORCE DARK BACKGROUND -->
+        <item name="windowSplashScreenBackground">
+            @color/splash_dark_bg
+        </item>
+
+        <item name="windowSplashScreenIconBackgroundColor">
+            @android:color/transparent
+        </item>
+
+        <!-- 🖼 App logo -->
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/new_favorites_splass
+        </item>
+
+        <!-- ⏱ Disable default animation delay -->
+        <item name="windowSplashScreenAnimationDuration">300</item>
+
+    </style>
+</resources>

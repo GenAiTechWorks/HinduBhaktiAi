@@ -1,0 +1,40 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!---->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+
+    android:gravity="center"
+
+    android:maxLines="1"
+    android:ellipsize="end"
+
+    app:autoSizeTextType="uniform"
+    app:autoSizeMinTextSize="6sp"
+    app:autoSizeMaxTextSize="18sp"
+    app:autoSizeStepGranularity="1sp"
+    android:textStyle="bold"
+    android:textColor="@color/tab_text_color"
+
+    android:background="@drawable/bg_tab_selector"
+    android:clipToOutline="true" />
+
+   <!-- <TextView
+        android:id="@+id/tabText"
+        style="@style/TextPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:textColor="@color/tab_text_selector"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>-->
+<!--
+</LinearLayout>-->

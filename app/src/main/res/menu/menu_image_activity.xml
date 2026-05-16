@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_go_favorites"
+        android:title="@string/go_to_favorites"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share_app"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="never"/>
+
+    <!-- MUTE / UNMUTE -->
+    <item
+        android:id="@+id/action_music"
+        android:icon="@drawable/outline_music_on"
+        android:title="@string/mute"
+        app:showAsAction="ifRoom" />
+
+</menu>

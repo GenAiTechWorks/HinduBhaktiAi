@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765493908002",
+    "project_id": "ai-promt-genie",
+    "storage_bucket": "ai-promt-genie.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765493908002:android:0949222c025ee87bfb707b",
+        "android_client_info": {
+          "package_name": "com.hindu.lordpromptsai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDswoRum0O_fZlL9amPMElepK-fWieUMys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

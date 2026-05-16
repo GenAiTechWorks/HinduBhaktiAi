@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_about_app"
+        android:title="@string/about_app"
+        android:icon="@drawable/outline_info_24"/>
+    <item
+        android:id="@+id/nav_help_us"
+        android:title="@string/app_help"
+        android:icon="@drawable/rounded_help_24"/>
+    <item
+        android:id="@+id/nav_rate"
+        android:title="@string/rate_us"
+        android:icon="@drawable/ic_star_rate"/>
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="@string/privacy_policy"
+        android:icon="@drawable/privacy_policy_icon"/>
+
+    <item
+        android:id="@+id/navCredits"
+        android:icon="@drawable/credits_icon"
+        android:title="@string/credits" />
+</menu>

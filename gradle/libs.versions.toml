@@ -1,0 +1,60 @@
+[versions]
+agp = "8.13.2"
+appUpdate = "2.1.0"
+blurview = "version-2.0.3"
+compiler = "5.0.6"
+coreSplashscreen = "1.2.0"
+drawerlayout = "1.2.0"
+firebaseBom = "34.7.0"
+glide = "5.0.5"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+lottie = "6.7.1"
+material = "1.13.0"
+activity = "1.12.2"
+constraintlayout = "2.2.1"
+media3ExoplayerVersion = "1.9.0"
+media3Ui = "1.9.0"
+playServicesAds = "24.9.0"
+recyclerview = "1.4.0"
+firebaseDatabase = "22.0.1"
+roomCompiler = "2.8.4"
+roomKtx = "2.8.4"
+roomRuntime = "2.8.4"
+taptargetview = "1.15.0"
+media3Exoplayer = "1.9.0"
+
+[libraries]
+app-update = { module = "com.google.android.play:app-update", version.ref = "appUpdate" }
+app-update-ktx = { module = "com.google.android.play:app-update-ktx", version.ref = "appUpdate" }
+blurview = { module = "com.github.Dimezis:BlurView", version.ref = "blurview" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+drawerlayout = { module = "androidx.drawerlayout:drawerlayout", version.ref = "drawerlayout" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+media3-exoplayer-v121 = { module = "androidx.media3:media3-exoplayer", version.ref = "media3ExoplayerVersion" }
+media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3Ui" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+taptargetview = { module = "com.getkeepsafe.taptargetview:taptargetview", version.ref = "taptargetview" }
+media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3Exoplayer" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

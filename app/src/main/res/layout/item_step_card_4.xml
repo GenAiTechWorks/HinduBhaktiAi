@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="14dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/step_card_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- 🔢 STEP NUMBER (RESPONSIVE CIRCLE) -->
+        <TextView
+            android:id="@+id/tvStepNumber"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/_4"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_step_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintWidth_percent="0.12"
+            app:layout_constraintDimensionRatio="1:1" />
+
+        <!-- 🏷 STEP TITLE -->
+        <TextView
+            android:id="@+id/tvStepTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/paste_the_prompt_in_ai"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/tvStepNumber"
+            app:layout_constraintTop_toTopOf="@id/tvStepNumber"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 📄 STEP DESCRIPTION -->
+        <TextView
+            android:id="@+id/tvStepDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/paste_the_prompt_ans"
+            android:textColor="#BFFFFFFF"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@id/tvStepTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvStepTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvStepNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
