@@ -81,6 +81,8 @@ public class ImageDetailActivity extends BaseActivity {
     private boolean favoriteChanged = false;
     private boolean isFirstLoad = true;
 
+    private boolean isSwipeFromRight = true;
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -513,6 +515,8 @@ public class ImageDetailActivity extends BaseActivity {
     }
 
    private void goNext() {
+       isSwipeFromRight = true;
+
        boolean wrapped = false;
 
        currentIndex++;
@@ -531,6 +535,8 @@ public class ImageDetailActivity extends BaseActivity {
    }
 
     private void goPrevious() {
+
+        isSwipeFromRight = false;
         currentIndex--;
 
         if (currentIndex < 0) {
@@ -561,8 +567,11 @@ public class ImageDetailActivity extends BaseActivity {
         detailImage.setImageResource(currentImageItem.getImageResId());
 
         if (!isFirstLoad) {
+            int anim = isSwipeFromRight
+                    ? R.anim.slide_from_right
+                    : R.anim.slide_from_left;
             detailImage.startAnimation(
-                    AnimationUtils.loadAnimation(this, R.anim.image_slide_in)
+                    AnimationUtils.loadAnimation(this, anim)
             );
         } else {
             // first load → no animation

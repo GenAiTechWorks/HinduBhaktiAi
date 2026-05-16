@@ -365,6 +365,8 @@ public class MainActivity extends BaseActivity {
                     recyclerView.getRecycledViewPool().clear();
                     adapter.updateImages(selectedTab.images());
                     adapter.setTabTitle(selectedTab.title());
+                    // ✅ ALWAYS START FROM TOP
+                    recyclerView.scrollToPosition(0);
                 }
 
                 syncAllTabsWithDB();
@@ -809,6 +811,7 @@ public class MainActivity extends BaseActivity {
                         || adapter.getItemCount() != favorites.size()) {
                     adapter.setFavoritesTab(true);
                     adapter.updateImages(favorites);
+                    recyclerView.scrollToPosition(0);
                 }
 
                 if (favorites.isEmpty()) {
