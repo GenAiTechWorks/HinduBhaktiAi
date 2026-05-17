@@ -670,7 +670,7 @@ public class ImageDetailActivity extends BaseActivity {
 
         String shareMessage =
                 "✨ Discover Divine AI Prompts ✨\n\n" +
-                        "Generate beautiful AI prompts inspired by Lords & devotion.\n\n" +
+                        "Generate beautiful AI prompts inspired by Gods & devotion.\n\n" +
                         "👉 Download now:\n" +
                         "https://play.google.com/store/apps/details?id=" + appPackageName;
 

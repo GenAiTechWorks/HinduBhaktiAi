@@ -535,13 +535,13 @@ public class MainActivity extends BaseActivity {
                                 findViewById(R.id.action_mute)
                         },
                         new String[]{
-                                "Lords Selection Tabs",
+                                "God Selection Tabs",
                                 "Tap any image for full screen view and generate AI prompts",
                                 "Favourites Collection",
                                 "Divine Bhakti Music"
                         },
                         new String[]{
-                                "Select each individual Tab to view beautiful lords images.",
+                                "Select each individual Tab to view beautiful gods images.",
                                 " ",
                                 "Select to add to your favourites collection, You can view your favourites in the last tab",
                                 "Listen to devotional bhakti music and stay blessed."
@@ -698,7 +698,7 @@ public class MainActivity extends BaseActivity {
 
         String shareMessage =
                 "✨ Discover Divine AI Prompts ✨\n\n" +
-                        "Generate beautiful AI prompts inspired by Lords & devotion.\n\n" +
+                        "Generate beautiful AI prompts inspired by Gods & devotion.\n\n" +
                         "👉 Download now:\n" +
                         "https://play.google.com/store/apps/details?id=" + appPackageName;
 

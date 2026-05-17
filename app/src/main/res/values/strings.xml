@@ -19,9 +19,9 @@
 
     <string name="credits_text">
 Developed by:\n
-GenAi TechWorks pvt ltd.\n\n
+GenAi TechWorks\n\n
 
-AI Platforms:\n
+Ai Platform:\n
 • ChatGPT\n
 • Google Gemini\n
 • Co-Pilot\n\n
@@ -38,7 +38,7 @@ Icons and Media:\n
 • Material Icons\n
 • Open-source assets\n\n
 
-© 2026 Hindu Bhakti AI . All rights reserved.
+© 2026 GenAi TechWorks, All rights reserved.
 </string>
 
     <string name="empty_favorites_title">No Favorites Yet!</string>
@@ -100,7 +100,7 @@ Use AI-generated images as wallpapers, WhatsApp display pictures or for personal
     <string name="_2">2</string>
     <string name="generate_the_prompt">Generate the prompt</string>
     <string name="tap_to_generate">Tap to generate the prompt and watch the prompt text appeare gradually</string>
-    <string name="select_lord">Select Lord</string>
+    <string name="select_lord">Select God</string>
     <string name="explore_your_favorite">Explore your favorite god to make divine you</string>
     <string name="button_image">Image</string>
     <string name="favorite">Favorite</string>
@@ -138,7 +138,7 @@ Use AI-generated images as wallpapers, WhatsApp display pictures or for personal
     <string name="hindu_bhakti_ai_prompts">Hindu Bhakti AI Prompts</string>
     <string name="version">Version 1.0</string>
     <string name="about_the_app">About the App</string>
-    <string name="about_app_desc">Experience Devotion Through the Power of AI:\n\nEmbark on a deeply spiritual journey with this unique AI-powered devotional mobile application, thoughtfully designed to help you connect with Hindu deities through faith, devotion (bhakti), and divine blessings.</string>
+    <string name="about_app_desc">Experience devotion through the power of AI.\n\nEmbark on a deeply spiritual journey with this unique AI-powered devotional mobile application, thoughtfully designed to help you connect with Hindu deities through faith, devotion (bhakti), and divine blessings.</string>
     <string name="key_features">Key Features</string>
     <string name="begin_your_sacred_journey">Begin Your Sacred Journey</string>
     <string name="join_us_desc">Join us on this sacred path and immerse yourself in the devotion and bhakti of Hindu deities. Experience faith, serenity, and divine blessings through a harmonious blend of spirituality and AI technology.</string>
