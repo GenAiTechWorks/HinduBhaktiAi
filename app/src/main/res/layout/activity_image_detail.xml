@@ -223,7 +223,7 @@
                 android:paddingHorizontal="2dp"
 
                 app:autoSizeTextType="uniform"
-                app:autoSizeMinTextSize="5sp"
+                app:autoSizeMinTextSize="2sp"
                 app:autoSizeMaxTextSize="14sp"
                 app:autoSizeStepGranularity="1sp"
 
