@@ -122,7 +122,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
-                    <include layout="@layout/layout_ad_banner"/>
+                    <include layout="@layout/layout_ad_main_banner"/>
                 </FrameLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>

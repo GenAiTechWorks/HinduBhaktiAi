@@ -19,6 +19,9 @@ public class InterstitialAdManager {
     private static final String TEST_AD_UNIT =
             "ca-app-pub-3940256099942544/1033173712";
 
+    private static final String INTERSTITIAL_AD_UNIT =
+            "ca-app-pub-6944458474940814/8712405200";
+
     // Load once
     public static void load(Context context) {
         if (isLoading || interstitialAd != null) return;
@@ -29,7 +32,8 @@ public class InterstitialAdManager {
 
         InterstitialAd.load(
                 context,
-                TEST_AD_UNIT,
+               /* TEST_AD_UNIT,*/
+                INTERSTITIAL_AD_UNIT,
                 adRequest,
                 new InterstitialAdLoadCallback() {
 
